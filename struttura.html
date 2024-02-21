@@ -11,7 +11,6 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-Content-Type-Options" content="nosniff">
 
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/photoswipe.css">
@@ -192,11 +191,11 @@
 	<script src="assets/js/main.js"></script>
 
 	<script type="module">
-		import PhotoSwipeLightbox from '/assets/js/photoswipe-lightbox.esm.js';
+		import PhotoSwipeLightbox from './assets/js/photoswipe-lightbox.esm.js';
 		const options = {
 			gallery: '#gallery--with-custom-caption',
 			children: '.pswp-gallery__item',
-			pswpModule: () => import('/assets/js/photoswipe.esm.js')
+			pswpModule: () => import('./assets/js/photoswipe.esm.js')
 		};
 		const lightbox = new PhotoSwipeLightbox(options);
 		lightbox.on('uiRegister', function () {
