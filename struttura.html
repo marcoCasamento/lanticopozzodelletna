@@ -37,11 +37,32 @@
 		.hidden-caption-content {
 			display: none;
 		}
+
 		.pswp-gallery__item {
 			margin: 1rem;
 		}
+
 		.pswp-gallery {
 			display: inline-flex;
+		}
+
+		.gallery-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			gap: 0px;
+		}
+
+		.gallery-container div {
+			/* background-color: #ccc; */
+			/* padding: 5px; */
+
+			text-align: center;
+		}
+
+		.a,
+		img {
+			width: 100%;
+			height: auto;
 		}
 	</style>
 </head>
@@ -80,33 +101,32 @@
 		<div class="inner">
 			<div class="box">
 				<div class="content">
-					<header class="align-center">
+					<!-- <header class="align-center">
 						<p>maecenas sapien feugiat ex purus</p>
 						<h2>Lorem ipsum dolor</h2>
-					</header>
+					</header> -->
+					<h4>La nostra struttura offre ai propri ospiti:</h4>
 					<ul>
-						<li><strong>La nostra struttura offre ai propri ospiti:</strong></li>
-						<ul>
-							<li>Un grazioso angolo cottura, composto da frigo, forno elettrico e bagno con
-								asciugacapelli, cabina doccia e tovagliato.</li>
-							<li>Un salone con camino fornito di legna e termosifoni per il riscaldamento.</li>
-							<li>5 stanze con letti matrimoniali, letti singoli e diversi divani letto.</li>
-							<li>Un'ampia zona esterna con barbecue e forno a pietra ben organizzata per gestire al
-								meglio le tue giornate.</li>
-							<li>Un'ampia area giochi per bambini con altalene e scivoli.</li>
-							<li>Ampio parcheggio gratuito.</li>
-							<li>Sentieri naturalistici per scoprire il mondo della natura, adatti a grandi e piccini.
-							</li>
-						</ul>
-						<li><strong>Adiacente alla nostra struttura disponiamo di:</strong></li>
-						<ul>
-							<li>Un ampio spiazzale attrezzato con diversi tavoli, panche e sedie.</li>
-							<li>Servizi igienici per le tue giornate all'aperto.</li>
-						</ul>
+						<li>Un grazioso angolo cottura, composto da frigo, forno elettrico e bagno con
+							asciugacapelli, cabina doccia e tovagliato.</li>
+						<li>Un salone con camino fornito di legna e termosifoni per il riscaldamento.</li>
+						<li>5 stanze con letti matrimoniali, letti singoli e diversi divani letto.</li>
+						<li>Un'ampia zona esterna con barbecue e forno a pietra ben organizzata per gestire al
+							meglio le tue giornate.</li>
+						<li>Un'ampia area giochi per bambini con altalene e scivoli.</li>
+						<li>Ampio parcheggio gratuito.</li>
+						<li>Sentieri naturalistici per scoprire il mondo della natura, adatti a grandi e piccini.
+						</li>
+					</ul>
+					<h4>Adiacente alla nostra struttura disponiamo di:</h4>
+					<ul>
+						<li>Un ampio spiazzale attrezzato con diversi tavoli, panche e sedie.</li>
+						<li>Servizi igienici per le tue giornate all'aperto.</li>
 					</ul>
 
 
-					<strong>La nostra struttura è ideale per:</strong>
+
+					<h4>La nostra struttura è ideale per:</h4>
 					<ul>
 						<li>Famiglie con bambini</li>
 						<li>Coppie</li>
@@ -116,14 +136,13 @@
 						<li>Chi desidera un soggiorno rilassante e confortevole</li>
 					</ul>
 
+
+					<h4>Inoltre, su richiesta:</h4>
 					<ul>
-						<li><strong>Inoltre, su richiesta:</strong></li>
-						<ul>
-							<li>Possibilità di organizzare escursioni e gite nei dintorni</li>
-							<li>Servizio di catering e ristorazione per i vostri eventi</li>
-							<li>Servizio di transfer da e per l'aeroporto</li>
-							<li>Animali domestici ammessi</li>
-						</ul>
+						<li>Possibilità di organizzare escursioni e gite nei dintorni</li>
+						<li>Servizio di catering e ristorazione per i vostri eventi</li>
+						<li>Servizio di transfer da e per l'aeroporto</li>
+						<li>Animali domestici ammessi</li>
 					</ul>
 
 				</div>
@@ -131,51 +150,50 @@
 		</div>
 	</section>
 
-	<div class="pswp-gallery pswp-gallery--with-caption" id="gallery--with-custom-caption">
+	<div class="gallery-container pswp-gallery pswp-gallery--with-caption" id="gallery--with-custom-caption">
 		<div class="pswp-gallery__item">
-			<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-pswp-width="1669"
-				data-pswp-height="2500" target="_blank">
-				<img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="Caption 1">
+			<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg" data-pswp-width="2500"
+				data-pswp-height="1667" target="_blank">
+				<img loading="lazy" decoding="async"
+					src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-200.jpg" alt="Testo 1">
 			</a>
-			<div class="hidden-caption-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a
-					href="https://example.com" target="_blank" rel="nofollow">Test link →</a></div>
 		</div>
 
 		<div class="pswp-gallery__item">
 			<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-pswp-width="2500"
 				data-pswp-height="1666" target="_blank">
-				<img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="Caption 2">
+				<img loading="lazy" decoding="async"
+					src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="Testo 2">
 			</a>
 		</div>
 
 		<div class="pswp-gallery__item">
 			<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg" data-pswp-width="2500"
 				data-pswp-height="1667" target="_blank">
-				<img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-200.jpg" alt="Caption 3">
+				<img loading="lazy" decoding="async"
+					src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-200.jpg" alt="Testo 3">
 			</a>
 		</div>
 
 		<div class="pswp-gallery__item">
 			<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg" data-pswp-width="2500"
 				data-pswp-height="1668" target="_blank">
-				<img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg" alt="Caption 4">
+				<img loading="lazy" decoding="async"
+					src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg" alt="Testo 4">
 			</a>
 		</div>
 
 
 	</div>
 
-
-	</div>
-	</div>
 	<!-- Footer -->
 	<footer id="footer">
 		<div class="container">
 			<ul class="icons">
-				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				<li><a href="https://wa.me/+393427603096/?text=Ciao%2C%20vorrei%20delle%20informazioni%20sulla%20disponibilit%C3%A0%20della%20struttura" target="_blank" class="icon fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+				<li><a href="https://www.facebook.com/people/L-Antico-Pozzo-DellETNA/61552536232672/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/l_antico_pozzo_dell_etna/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="mailto:info@lanticopozzodelletna.it" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 			</ul>
 		</div>
 	</footer>
